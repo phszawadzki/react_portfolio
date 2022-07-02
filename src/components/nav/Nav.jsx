@@ -13,10 +13,10 @@ const Nav = () => {
   return (
     <nav>
         <a href="#" className='active'><AiOutlineHome/></a>
-        <a href="#about"><AiOutlineUser/></a>
-        <a href="#"><BiBookContent/></a>
-        <a href="#"><RiServiceLine/></a>
-        <a href="#"><AiOutlineMessage/></a>
+        <a href="#portfolio"><BiBookContent/></a>
+        {/* <a href="#about"><AiOutlineUser/></a> */}
+        <a href="#testimonials"><RiServiceLine/></a>
+        {/* <a href="#"><AiOutlineMessage/></a> */}
     </nav>
   )
 }

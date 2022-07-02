@@ -12,7 +12,7 @@
 
 :root {
     --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
+    --color-bg-variant: #242c5a;
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
@@ -23,6 +23,7 @@
     --container-width-lg:  75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
+    
 }
 
 html {
@@ -34,6 +35,9 @@ html {
 }
 
 body {
+    user-select: none;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
@@ -57,7 +61,7 @@ h1 {
 }
 
 section {
-    margin-top: 8rem;
+    padding-top: 8rem;
 }
 
 section > h2, section > h5 {
@@ -77,10 +81,13 @@ section > h2 {
 a {
     color: var(--color-primary);
     transition: var(--transition);
+    text-decoration: none;
 }
 
 a:hover {
     color: var(--color-white);
+    text-decoration: none;
+
 }
 
 .btn {
@@ -111,6 +118,8 @@ img {
     object-fit: cover;
 }
 
+
+
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========*/
 
 @media screen and (max-width: 1024px){
@@ -120,7 +129,7 @@ img {
     }
 
     section {
-        margin-top: 6rem;
+        padding-top: 6rem;
     }
 }
 
