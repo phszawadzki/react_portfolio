@@ -43,19 +43,23 @@ function arrange(){
 
 
     let backgroundImageHeight;
+    let backgroundImageWidth;
     Array.prototype.forEach.call(document.getElementsByClassName("img__under"), function(el) {
        if (el.clientHeight > 0){
         backgroundImageHeight = el.clientHeight;
+        backgroundImageWidth = el.clientWidth;
        }
     }); 
     //mac iframe
     let topProperty = (windowHeight - backgroundImageHeight)/2 +  backgroundImageHeight*0.41;
+    let leftProperty = (windowWidth - backgroundImageWidth)/2 + backgroundImageWidth*0.648;
+    let leftPropertyM = (windowWidth - backgroundImageWidth)/2 + backgroundImageWidth*0.1767;
     topProperty = Math.round(topProperty);
     Array.prototype.forEach.call(document.getElementsByClassName("mac"), function(el) {
         el.style["position"] = "absolute";
         el.style["transform"] = "translate(-50%, -50%) scale(" + scale + ")";
         el.style["top"] = topProperty + "px";
-        el.style["left"] = "64.8%";
+        el.style["left"] = leftProperty + "px";
         el.style["width"] = "1190px";
         el.style["height"] = "629px";
         el.style["border"] = "none";
@@ -66,7 +70,13 @@ function arrange(){
     let mScale = initMScale*scaleProportion;
     
     Array.prototype.forEach.call(document.getElementsByClassName("iphone"), function(el) {
-        el.setAttribute("style", "position: absolute; transform:translate(-50%, -50%) scale(" + mScale + "); top: 50.6%; left: 17.67%; width: 363.5px; height: 616px; border:none"); 
+        el.style["position"] = "absolute";
+        el.style["transform"] = "translate(-50%, -50%) scale(" + mScale + ")";
+        el.style["top"] = "50.6%";
+        el.style["left"] = leftPropertyM + "px";
+        el.style["width"] = "363.5px";
+        el.style["height"] = "616px";
+        el.style["border"] = "none";
     }); 
 
     
