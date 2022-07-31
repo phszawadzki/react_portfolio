@@ -1,20 +1,9 @@
-add top-margin to components so that there's space above them once you scroll to them via a link
-
-
-
-
-
-
+ON mobile
+- header is cut on mobile
 
 -upload "historia arisco" into github and link githubpages version of it to an appropriate portfolio item in portfolio section (you can also convert the intro vid into gif and put it place of the website preview image)
 
 -upload "eopieka" and 'ppwo' to your new github account adn change the links in portfolio ofc
 NAME the new repository corrertly - "ppwo" that is.
 
-
-
-
-
-
-
--use "if statement" in modal demo in Portfolio.jsx, so that it check wheter there is a link for mobile version in data array. After that you can delete all the redundant link repetitions. "demoMobile" is needed only in two array items - "e-opieka and ppwo"
+-use "if statement" in modal demo in Portfolio.jsx, so that it check whether there is a link for mobile version in data array. After that you can delete all the redundant link repetitions. "demoMobile" is needed only in two array items - "e-opieka and ppwo"

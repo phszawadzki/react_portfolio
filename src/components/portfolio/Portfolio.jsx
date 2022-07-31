@@ -5,22 +5,24 @@ import './portfolio.css'
 import './modal.css'
 
 import BACKGROUND from '../../assets/background.png'
+import ARISCO from '../../assets/arisco.jpg'
 import GRUNT from '../../assets/website preview grunt.jpg'
 import PPWO from '../../assets/website preview ppwo.jpg'
 import HISTORIA_ARISCO from '../../assets/website preview historia arisco.jpg'
 import EOPIEKA from '../../assets/website preview eopieka.jpg'
 import LUBZINA from '../../assets/website preview lubzina.jpg'
+import MALWA_PRODUCT_LIST from '../../assets/malwa product list.jpg'
 
 const data = [
   {
     id: 1,
-    image: GRUNT,
-    title: 'Grunt Usługi Geodezyjne',
-    desc: 'Simple business website made in ReactJS', 
-    github: 'https://github.com/phszawadzki/react_grunt',
-    demoMobile: 'https://phszawadzki.github.io/react_grunt/',
-    demo: 'https://phszawadzki.github.io/react_grunt/',
-    stack: 'ReactJS Bootstrap HTML CSS '
+    image: LUBZINA,
+    title: 'DPS Lubzina',
+    desc: '', 
+    github: 'https://piotrarisco.github.io/lubzina/',
+    demoMobile: 'https://piotrarisco.github.io/lubzina/',
+    demo: 'https://piotrarisco.github.io/lubzina/',
+    stack: 'HTML CSS '
   },
   {
     id: 2,
@@ -54,26 +56,46 @@ const data = [
   },
   {
     id: 5,
-    image: LUBZINA,
-    title: 'a',
-    desc: ' ', 
-    github: 'https://piotrarisco.github.io/lubzina/',
-    demoMobile: 'https://piotrarisco.github.io/lubzina/',
-    demo: 'https://piotrarisco.github.io/lubzina/',
-    stack: 'HTML CSS '
-  }
+    image: GRUNT,
+    title: 'Grunt Usługi Geodezyjne',
+    desc: 'Simple business website made in ReactJS', 
+    github: 'https://github.com/phszawadzki/grunt_radek_marciniak',
+    demoMobile: 'https://phszawadzki.github.io/grunt_radek_marciniak/',
+    demo: 'https://phszawadzki.github.io/grunt_radek_marciniak/',
+    stack: 'ReactJS Bootstrap HTML CSS '
+  },
+  {
+    id: 6,
+    image: ARISCO,
+    title: 'Arisco.pl',
+    desc: 'Concept website. Tinkering with backend and database', 
+    github: 'https://github.com/phszawadzki/grunt_radek_marciniak',
+    demoMobile: 'https://firstprojectxad222.000webhostapp.com/oferta.php',
+    demo: 'https://firstprojectxad222.000webhostapp.com/oferta.php',
+    stack: 'PHP SQL Javascript Bootstrap HTML CSS'
+  },
+  {
+    id: 7,
+    image: MALWA_PRODUCT_LIST,
+    title: 'Malwa Product List',
+    desc: '', 
+    github: 'https://github.com/phszawadzki/malwa_product_list',
+    demoMobile: 'https://phszawadzki.github.io/malwa_product_list/',
+    demo: 'https://phszawadzki.github.io/malwa_product_list/',
+    stack: 'React Javascript Bootstrap HTML CSS'
+  },
 ]
 
 
 
 const Portfolio = () => {
-
+ // myArray.slice(0).reverse().map(function(...
   return (
     <><section id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, desc, github, demoMobile, demo, stack }) => {
+        {data.slice(0).reverse().map(({ id, image, title, desc, github, demoMobile, demo, stack }) => {
           return (
             <>
             <article key={id} className="portfolio__item">

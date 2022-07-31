@@ -16,7 +16,7 @@ const Header = () => {
             <a href="#portfolio" className='scroll__down'>Scroll Down</a>
         </div>
     </header>
-  )
+  ) 
 }
 
 export default Header
