@@ -28,73 +28,6 @@ const data = [
     stack: 'HTML CSS',
     special__msg: special__msg__not__finished
   },
-  {
-    id: 2,
-    image: PPWO,
-    title: 'Projekt Pomagamy w Opiece',
-    desc: 'Uses JS library for slides and PHP to run a simplified version of the website if viewed on mobile.', 
-    github: 'https://github.com/phszawadzki/react_grunt',
-    demoMobile: 'https://piotrarisco.github.io/ppwoMobile/',
-    demo: 'https://piotrarisco.github.io/ppow/',
-    stack: 'Javascript HTML CSS',
-    special__msg: empty
-  },
-  {
-    id: 3,
-    image: HISTORIA_ARISCO,
-    title: 'Historia Arisco',
-    desc: empty, 
-    github: 'https://github.com/piotrarisco/historia-arisco',
-    demoMobile: 'https://www.arisco.pl/historia-firmy/',
-    demo: 'https://www.arisco.pl/historia-firmy/',
-    stack: 'Javascript HTML CSS',
-    special__msg: empty
-  },
-  {
-    id: 4,
-    image: EOPIEKA,
-    title: 'e-opieka', 
-    desc: 'Uses JS library to animate shape transformations and PHP to run a simplified version of the website if viewed on mobile.', 
-    github: 'https://piotrarisco.github.io/eOpieka/',
-    demoMobile: 'https://piotrarisco.github.io/eOpiekaMobile/',
-    demo: 'https://piotrarisco.github.io/eOpieka/',
-    stack: 'PHP Javascript Bootstrap HTML CSS',
-    special__msg: empty
-  },
-  {
-    id: 5,
-    image: GRUNT,
-    title: 'Grunt Usługi Geodezyjne',
-    desc: 'Simple business website made in ReactJS', 
-    github: 'https://github.com/phszawadzki/grunt_radek_marciniak',
-    demoMobile: 'https://phszawadzki.github.io/grunt_radek_marciniak/',
-    demo: 'https://phszawadzki.github.io/grunt_radek_marciniak/',
-    stack: 'ReactJS Bootstrap HTML CSS',
-    special__msg: empty
-  },
-  {
-    id: 6,
-    image: ARISCO,
-    title: 'Arisco.pl',
-    desc: 'Concept website. Tinkering with backend and database', 
-    github: 'https://github.com/phszawadzki/grunt_radek_marciniak',
-    demoMobile: 'https://firstprojectxad222.000webhostapp.com/oferta.php',
-    demo: 'https://firstprojectxad222.000webhostapp.com/oferta.php',
-    stack: 'PHP SQL Javascript Bootstrap HTML CSS',   
-    special__msg: special__msg__not__finished
-
-  },
-  {
-    id: 7,
-    image: MALWA_PRODUCT_LIST,
-    title: 'Malwa Product List',
-    desc: empty, 
-    github: 'https://github.com/phszawadzki/malwa_product_list',
-    demoMobile: 'https://phszawadzki.github.io/malwa_product_list/',
-    demo: 'https://phszawadzki.github.io/malwa_product_list/',
-    stack: 'React Javascript Bootstrap HTML CSS',   
-    special__msg: special__msg__not__finished
-  },
 ]
 
 
@@ -103,13 +36,16 @@ const Portfolio = () => {
  // myArray.slice(0).reverse().map(function(...
   return (
     <><section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>My Recent Doodles and such</h5>
+      <h2>Design</h2> 
       <div className="container portfolio__container">
         {data.slice(0).reverse().map(({ id, image, title, desc, github, demoMobile, demo, stack, special__msg }) => {
           return (
             <>
             <article key={id} className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={image} alt={title} />
+              </div>
               <div className="portfolio__item-image">
                 <img src={image} alt={title} />
               </div>

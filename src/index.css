@@ -11,11 +11,17 @@
 }
 
 :root {
-    --color-bg: #1f1f38;
-    --color-bg-variant: #242c5a;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
-    --color-white: #fff;
+    --color-bg: rgb(53, 87, 88);
+    /* --color-bg: rgb(190, 236, 248); */
+    /* --color-bg-variant: #242c5a; */
+    --color-bg-variant:rgb(46, 75, 77);
+    /* --color-primary: #4db5ff; */
+    --color-primary: rgb(100, 201, 204);
+    /* --color-primary-darkest: rgba(58, 116, 158, 0.4); */
+    /* --color-primary-variant: rgba(77, 181, 255, 0.4); */
+    --color-primary-variant: rgb(187, 187, 187);
+    /* --color-primary-variant: white; */
+    --color-white: rgb(255, 255, 255);
     --color-light: rgba(255, 255, 255, 0.6);
 
     --transition: all 400ms ease;
@@ -42,7 +48,7 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+    /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 /* ============== GENERAL STYLES =============*/

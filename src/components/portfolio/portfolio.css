@@ -32,6 +32,11 @@
     margin-bottom: 1rem;
 }
 
+.special__msg {
+    color: grey;
+    font-size: 0.8rem;
+}
+
 
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========*/

@@ -13,10 +13,16 @@ const Header = () => {
             <h5 className="text-light"><ScrambledText/></h5>
             {/* <CTA/> */}
             <HeaderSocials/>
-            <a href="#portfolio" className='scroll__down'>Scroll Down</a>
+              <a href="#portfolio" className='scroll__down'>Scroll Down</a>
+            {/* <div className="tooltip">
+            
+            <span class="tooltiptext">Tooltip text</span>
+            </div> */}
+            
         </div>
     </header>
   ) 
 }
 
 export default Header
+
