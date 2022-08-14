@@ -12,6 +12,7 @@ import HISTORIA_ARISCO from '../../assets/website preview historia arisco.jpg'
 import EOPIEKA from '../../assets/website preview eopieka.jpg'
 import LUBZINA from '../../assets/website preview lubzina.jpg'
 import MALWA_PRODUCT_LIST from '../../assets/malwa product list.jpg'
+import MERMAID_GAME from '../../assets/mermaid game.jpg'
 
 let empty = ''
 let special__msg__not__finished = 'Not Finished (most buttons won\'t work)'
@@ -95,12 +96,23 @@ const data = [
     stack: 'React Javascript Bootstrap HTML CSS',   
     special__msg: special__msg__not__finished
   },
+  {
+    id: 8,
+    image: MERMAID_GAME,
+    title: 'Mermaid Game',
+    desc: empty, 
+    github: 'https://github.com/phszawadzki/game_1',
+    demoMobile: 'https://phszawadzki.github.io/game_1/',
+    demo: 'https://phszawadzki.github.io/game_1/',
+    stack: 'Javascript HTML CSS',   
+    special__msg: empty
+  },
 ]
 
 
 
 const Portfolio = () => {
- // myArray.slice(0).reverse().map(function(...
+
   return (
     <><section id="portfolio">
       <h5>My Recent Work</h5>

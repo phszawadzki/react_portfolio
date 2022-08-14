@@ -1,3 +1,6 @@
+'30 lat razem' doesn't work on mobile demo
+
+
 ON mobile
 - header is cut on mobile
 
